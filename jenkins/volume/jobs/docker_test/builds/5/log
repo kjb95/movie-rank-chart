@@ -1,0 +1,13 @@
+Started by user [8mha:////4DBerR5EI/Czg2PO8mIPITgEj+bFplaOLYT1t+TE721tAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL97KwkS1MACFytysAAAAA=[0mkjb95
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/docker_test
+[docker_test] $ /bin/sh -xe /tmp/jenkins7631357807516895414.sh
++ docker images
+REPOSITORY        TAG       IMAGE ID       CREATED        SIZE
+backend           latest    c2bd5926adc2   9 days ago     247MB
+jenkins/jenkins   lts       153dc2842feb   2 weeks ago    502MB
+mariadb           11.0.2    4935389ac6b4   2 months ago   386MB
+mariadb           latest    8795cbbe985c   2 months ago   386MB
+hello-world       latest    b038788ddb22   4 months ago   9.14kB
+mariadb           10.4.18   5adcf31720a6   2 years ago    380MB
+Finished: SUCCESS
