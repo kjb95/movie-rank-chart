@@ -52,6 +52,14 @@
                 }
             }
         }
+        stage(&apos;SSH SERVER CONNECTION&apos;) {
+            steps {
+                sshagent([&apos;ssh&apos;]) {
+                    sh &quot;ssh -p 3334 root@100.0.0.189 &apos;docker pull kjb95/my-spring-boot:1.0&apos;&quot;
+                    sh &quot;ssh -p 3334 root@100.0.0.189 &apos;docker run kjb95/my-spring-boot:1.0&apos;&quot;
+                }
+            }
+        }
     }
 }</script>
     <sandbox>true</sandbox>
