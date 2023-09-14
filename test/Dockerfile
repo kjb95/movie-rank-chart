@@ -1,2 +1,3 @@
-FROM kjb95/my-base-image:1.0
+FROM ubuntu:16.10
+COPY . /app
 CMD /app/hello.sh

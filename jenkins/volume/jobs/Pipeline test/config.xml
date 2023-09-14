@@ -11,18 +11,15 @@
   </actions>
   <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties>
-    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.37.3">
-      <projectUrl>https://github.com/kjb95/movie-rank-chart/</projectUrl>
-      <displayName></displayName>
-    </com.coravy.hudson.plugins.github.GithubProjectProperty>
-  </properties>
+  <properties/>
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@3787.v8f5dcd14a_fa_c">
     <script>pipeline {
     agent any
     
     environment {
         dockerImage = &apos;&apos;
+        imageName = &apos;kjb95/my-base-image:1.0&apos;
+        dockerHubId = &apos;docker-hub&apos;
     }
     
     stages {
@@ -40,8 +37,19 @@
         }
         stage(&apos;Build Docker&apos;) {
             steps {
+                dir(&apos;test&apos;) {
+                    script {
+                        dockerImage = docker.build imageName
+                    }
+                }
+            }
+        }
+        stage(&apos;Push Docker&apos;) {
+            steps {
                 script {
-                    dockerImage = docker.build &apos;kjb95/my-base-image:1.0&apos;
+                    docker.withRegistry(&apos;&apos;, dockerHubId) {
+                        dockerImage.push(&quot;1.0&quot;)
+                    }
                 }
             }
         }

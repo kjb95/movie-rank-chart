@@ -3,5 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jenkins/volume/workspace/Pipeline test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jenkins/volume/workspace/Pipeline test@2" vcs="Git" />
   </component>
 </project>

@@ -1,0 +1,26 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@865.v43e78cc44e0d">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@3787.v8f5dcd14a_fa_c">
+    <parentIds>
+      <string>11</string>
+    </parentIds>
+    <id>12</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.support.steps.StageStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@3787.v8f5dcd14a_fa_c">
+      <arguments>
+        <entry>
+          <string>name</string>
+          <string>Bulid Gradle</string>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1275.veb_e0969ddf9e">
+      <startTime>1694664284336</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>
