@@ -18,7 +18,6 @@
     
     environment {
         dockerImage = &apos;&apos;
-        imageName = &apos;kjb95/my-base-image:1.0&apos;
         dockerHubId = &apos;docker-hub&apos;
     }
     
@@ -37,9 +36,9 @@
         }
         stage(&apos;Build Docker&apos;) {
             steps {
-                dir(&apos;test&apos;) {
+                dir(&apos;backend&apos;) {
                     script {
-                        dockerImage = docker.build imageName
+                        dockerImage = docker.build &apos;kjb95/my-spring-boot:1.0&apos;
                     }
                 }
             }
