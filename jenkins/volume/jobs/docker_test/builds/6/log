@@ -1,8 +1,0 @@
-Started by user [8mha:////4DBerR5EI/Czg2PO8mIPITgEj+bFplaOLYT1t+TE721tAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL97KwkS1MACFytysAAAAA=[0mkjb95
-Running as SYSTEM
-Building in workspace /var/jenkins_home/workspace/docker_test
-[docker_test] $ /bin/sh -xe /tmp/jenkins13938037733798860541.sh
-+ docker images
-/tmp/jenkins13938037733798860541.sh: 2: docker: not found
-Build step 'Execute shell' marked build as failure
-Finished: FAILURE
