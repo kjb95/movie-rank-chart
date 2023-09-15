@@ -1,0 +1,1 @@
+ssh -p 3334 root@100.0.0.189 'docker run kjb95/my-spring-boot:1.0'

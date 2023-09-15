@@ -1,0 +1,26 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@865.v43e78cc44e0d">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@3787.v8f5dcd14a_fa_c">
+    <parentIds>
+      <string>39</string>
+    </parentIds>
+    <id>40</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@3787.v8f5dcd14a_fa_c">
+      <arguments>
+        <entry>
+          <string>script</string>
+          <string>ssh -p 3334 root@100.0.0.189 &apos;docker run kjb95/my-spring-boot:1.0&apos;</string>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1275.veb_e0969ddf9e">
+      <startTime>1694752220392</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

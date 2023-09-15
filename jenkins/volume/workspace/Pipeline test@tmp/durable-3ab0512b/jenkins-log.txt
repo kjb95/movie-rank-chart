@@ -1,0 +1,19 @@
++ ssh -p 3334 root@100.0.0.189 docker run kjb95/my-spring-boot:1.0
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.15)
+
+2023-09-15 04:30:23.345  INFO 1 --- [           main] com.example.backend.BackendApplication   : Starting BackendApplication using Java 1.8.0_342 on fce4fc5615c9 with PID 1 (/app/app.jar started by root in /app)
+2023-09-15 04:30:23.351  INFO 1 --- [           main] com.example.backend.BackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-09-15 04:30:24.507  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-15 04:30:24.522  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-15 04:30:24.522  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-09-15 04:30:24.609  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-15 04:30:24.609  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1192 ms
+2023-09-15 04:30:25.036  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-15 04:30:25.047  INFO 1 --- [           main] com.example.backend.BackendApplication   : Started BackendApplication in 2.193 seconds (JVM running for 2.712)
